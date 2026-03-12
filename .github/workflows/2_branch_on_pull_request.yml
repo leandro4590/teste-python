@@ -12,4 +12,4 @@ jobs:
     steps:
       - name: Comentário
         run: |
-          echo "Comentario PULL REQUEST WORKFLOW - branch"
+          echo "Comentario PULL REQUEST WORKFLOW - branch template"
