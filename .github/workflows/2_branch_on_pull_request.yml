@@ -1,0 +1,15 @@
+name: Github actions - Pull Request - Branch Template
+run-name: Running - ${{ github.event_name}}
+on: 
+  pull_request:
+    branches:
+      #- develop
+      - main
+
+jobs:
+  on-push:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Comentário
+        run: |
+          echo "Comentario PULL REQUEST WORKFLOW - branch"
