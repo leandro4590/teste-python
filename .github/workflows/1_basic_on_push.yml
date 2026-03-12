@@ -1,5 +1,5 @@
 name: Github actions - Push Template Basic
-run-name: Running - ${{ guthub.event_name}}
+run-name: Running - ${{ github.event_name}}
 on: [push]
 
 job:
