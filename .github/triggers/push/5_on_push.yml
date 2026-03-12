@@ -1,0 +1,19 @@
+name: Github actions - Push - Path General
+run-name: Running - ${{ github.event_name}}
+on:
+  push:
+    branches:
+      - main
+      - develop
+#    branches-ignore:
+#      - 'release/**'
+    paths:
+      - '**.txt'
+
+jobs:
+  on-push:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Comentário
+        run: |
+          echo "Comentario PUSH WORKFlOW"
