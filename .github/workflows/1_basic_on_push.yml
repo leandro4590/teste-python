@@ -2,7 +2,7 @@ name: Github actions - Push Template Basic
 run-name: Running - ${{ github.event_name}}
 on: [push]
 
-job:
+jobs:
   on-push:
     runs-on: ubuntu-latest
     steps:
