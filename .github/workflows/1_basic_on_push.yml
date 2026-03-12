@@ -7,5 +7,5 @@ job:
     runs-on: ubuntu-latest
     steps:
       - name: Comentário
-      run: |
-        echo "Comentario do workflow PUSH"
+        run: |
+          echo "Comentario do workflow PUSH"
