@@ -1,0 +1,11 @@
+name: Github actions - Workflow dispatch Template Basico
+run-name: Running - ${{ github.event_name }}
+on: [workflow_dispatch]
+
+jobs:
+  on-push:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Comentário
+        run: |
+          echo "Comentario Workflow dispatch - Basic"
