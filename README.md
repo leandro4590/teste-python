@@ -1,3 +1,3 @@
 # udemy_gitgithub_action
 
-Teste branch
+Teste branch types
