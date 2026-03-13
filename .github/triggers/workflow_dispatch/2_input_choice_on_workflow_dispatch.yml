@@ -14,7 +14,7 @@ on:
         required: true
 
 jobs:
-  on-push:
+  on-workflow_dispatch:
     runs-on: ubuntu-latest
     steps:
       - name: Comentário
