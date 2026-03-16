@@ -10,7 +10,7 @@ jobs:
       run: |
         echo Comentario antes do erro
         exit 1
-    - name: 
+    - name: Comentário
       run: |
         echo Comentario apos o erro
 
@@ -21,7 +21,19 @@ jobs:
       run: |
         echo Comentario antes do erro
         exit 1
-    - name:
+    - name: Comentário
       if: always()
+      run: |
+        echo Comentario apos o erro
+
+  job_3_continue_on_error:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Comentário
+      run: |
+        echo Comentario antes do erro
+        exit 1
+      continue-on-error: true
+    - name: Comentário
       run: |
         echo Comentario apos o erro
