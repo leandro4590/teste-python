@@ -1,0 +1,25 @@
+name: GitHub Actions - Teste com dependencia Template
+run-name: Running - Teste com dependencia Template
+on: [push, workflow_dispatch]
+jobs:
+  teste_unit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Comentário
+        run: |
+          echo "Execução Setup"
+
+  test_api:
+    runs-on: ubuntu-latest
+    needs: teste_unit
+    steps:
+      - name: Comentario
+        run: |
+          echo "Execução test"
+  test_ui:
+    needs: [teste_unit, test_api]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Comentario
+        run: |
+          echo "Execução test"
