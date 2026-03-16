@@ -1,0 +1,14 @@
+name: GitHub Actions - Matrix strategy Template
+run-name: Running - Matrix
+on: [push, workflow_dispatch]
+jobs:
+  matrix_job:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        navegador: [chrome, firefox, edge]
+      fail-fast: false
+    steps:
+      - name: Comentário
+        run: |
+          echo ${{matrix.navegador}}
