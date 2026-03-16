@@ -1,0 +1,14 @@
+name: Github actions - Cron Job Template
+run-name: Running - ${{ github.event_name}}
+on: 
+  schedule:
+    - cron: '0 12 * * 1-5' 
+    - cron: '2,10 11,13 * * *'
+    
+jobs:
+  on-workflow_dispatch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Comentário
+        run: |
+          echo "Comentario Cron Job"
