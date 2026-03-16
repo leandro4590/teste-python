@@ -1,0 +1,11 @@
+name: GitHub Actions - Configuração de Variável de Repositorio
+run-name: Running - Var Repo Config
+on: [push, workflow_dispatch]
+jobs:
+  on-push:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Comentario
+        run: |
+          echo "${{vars.var_teste}}"
+
